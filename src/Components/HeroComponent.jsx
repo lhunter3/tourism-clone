@@ -5,6 +5,7 @@ export function HeroComponent() {
   return (
     <div className="video-background">
       <video playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop">
+      <link rel="preload" href="./dcvid1.mp4" as="video" type="video/mp4" />
         <source src="./dcvid1.mp4" type="video/mp4" />
       </video>
       <div className="header-content position-relative z-index-1 text-start pl-10">
