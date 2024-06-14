@@ -19,6 +19,26 @@ export function GlobeComponent() {
   const [globeRadius, setGlobeRadius] = useState();
   const [scale, setScale] = useState(1);
   const globeEl = useRef();
+  const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
+  const getVal = (feat) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
+
+
+  
+  const fetchData = async () => {
+    const responseCountries = await fetch(COUNTRIES_URL);
+    const dataCountries = await responseCountries.json();
+    //setCountries(dataCountries);
+
+    const maxVal = Math.max(...dataCountries.features.map(getVal));
+    //setMaxVal(maxVal);
+    colorScale.domain([0, maxVal]);
+
+    const responseCities = await fetch(CITIES_URL);
+    const dataCities = await responseCities.json();
+    //setCities(dataCities);
+
+    return{dataCountries,dataCities,maxVal};
+  };
 
   const handleHover = (d) => {
     setHoverD(d);
@@ -28,24 +48,13 @@ export function GlobeComponent() {
 
     globeEl.current.controls().enableZoom = false;
 
-    const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
-    const getVal = (feat) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
 
-    const fetchData = async () => {
-      const responseCountries = await fetch(COUNTRIES_URL);
-      const dataCountries = await responseCountries.json();
+
+    fetchData().then(({ dataCountries, dataCities, maxVal}) => {
       setCountries(dataCountries);
-
-      const maxVal = Math.max(...dataCountries.features.map(getVal));
-      setMaxVal(maxVal);
-      colorScale.domain([0, maxVal]);
-
-      const responseCities = await fetch(CITIES_URL);
-      const dataCities = await responseCities.json();
       setCities(dataCities);
-    };
-
-    fetchData();
+      setMaxVal(maxVal);
+    });
 
     if (globeEl.current) {
       globeEl.current.pointOfView({ lat: 59.8951, lng: -97.1384, altitude: 0.7 }, 30);
