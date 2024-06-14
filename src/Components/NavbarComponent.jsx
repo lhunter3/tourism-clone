@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
-const LOGO  = 'public/ke-logo.jpg';
+const LOGO  = 'ke-logo.jpg';
 
 export function NavbarComponent() {
   const [showNav, setShowNav] = useState(true);

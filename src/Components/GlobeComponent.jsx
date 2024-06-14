@@ -7,8 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export function GlobeComponent() {
-  const COUNTRIES_URL = 'public/ne_110m_admin_0_countries.geojson';
-  const CITIES_URL = 'public/canada_cities.json';
+  const COUNTRIES_URL = 'ne_110m_admin_0_countries.geojson';
+  const CITIES_URL = 'canada_cities.json';
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
   const [countries, setCountries] = useState(null);

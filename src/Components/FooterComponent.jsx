@@ -13,7 +13,7 @@ function CarouselComponent() {
   
       <Carousel activeIndex={index} onSelect={handleSelect} className='carousel'>
         <Carousel.Item >
-          <img className='carousel-img blur' src='public/alberta.jpg' />
+          <img className='carousel-img blur' src='alberta.jpg' />
           <Carousel.Caption >
             <h3>First slide label</h3>
             <p className='d-none d-md-block'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -21,7 +21,7 @@ function CarouselComponent() {
         </Carousel.Item>
   
         <Carousel.Item >
-          <img className='carousel-img blur' src='public/saskatchewan.jpg' />
+          <img className='carousel-img blur' src='saskatchewan.jpg' />
           <Carousel.Caption >
             <h3>Second slide label</h3>
             <p className='d-none d-md-block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -29,7 +29,7 @@ function CarouselComponent() {
         </Carousel.Item>
   
         <Carousel.Item>
-          <img className='carousel-img blur' src='public/britishcolumbia.jpg' />
+          <img className='carousel-img blur' src='britishcolumbia.jpg' />
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p className='d-none d-md-block'>
