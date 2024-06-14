@@ -8,6 +8,18 @@
 }
 
 
+#articleComponent a{
+  text-decoration: none;
+  color: red;
+}
+
+#articleComponent a:hover{
+  text-decoration: none;
+  color: black;
+
+}
+
+
 .fs-t1{
   font-size: 2.5rem;
   font-family: inherit;

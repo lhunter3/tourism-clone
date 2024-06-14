@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { GlobeComponent } from '../Components/GlobeComponent';
 import { NavbarComponent } from '../Components/NavbarComponent';
 import { BannerComponent } from '../Components/BannerComponent';
-import { ArticleComponent } from '../Components/ArticleComponent';
+import { ArticleDisplayComponent } from '../Components/ArticleDisplayComponent';
 import { FooterComponent } from '../Components/FooterComponent';
 import { HeroComponent } from '../Components/HeroComponent';
 
@@ -14,7 +14,7 @@ import { HeroComponent } from '../Components/HeroComponent';
 export function Packages() {
 
     //workaround for the issue where the page is not scrolled to the top when the page is loaded
-    window.onload = window.scrollTo(0, 0);
+    // window.onload = window.scrollTo(0, 0);
 
 
     const articles = [
@@ -26,9 +26,14 @@ export function Packages() {
     return(
         <>
          <NavbarComponent />
-         <ArticleComponent articles={articles} title='Wellness' desc='Unplug and unwind'></ArticleComponent>
-         <ArticleComponent articles={articles} title='Wellness' desc='Unplug and unwind'></ArticleComponent>
-         <ArticleComponent articles={articles} title='Wellness' desc='Unplug and unwind'></ArticleComponent>
+         
+         <ArticleDisplayComponent articles={articles} title='package' desc=''></ArticleDisplayComponent>
+         <ArticleDisplayComponent articles={articles} title='package' desc=''></ArticleDisplayComponent>
+         <ArticleDisplayComponent articles={articles} title='package' desc=''></ArticleDisplayComponent>
+         <ArticleDisplayComponent articles={articles} title='package' desc=''></ArticleDisplayComponent>
+
+         <FooterComponent />
+
 
         </>
        

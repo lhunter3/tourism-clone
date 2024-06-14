@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../App.css';
 import Carousel from 'react-bootstrap/Carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {fab, faTwitterSquare, faFacebook, faLinkedin, faGithub, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 function CarouselComponent() {
     const [index, setIndex] = useState(0);
@@ -42,18 +44,18 @@ function CarouselComponent() {
     );
   }
   
-export function FooterComponent() {
+export function FooterComponent({bool=true}) {
     return (
       <footer>
-      <CarouselComponent />
-        <div className="footer">
+      {bool && <CarouselComponent />}
+        <div id='footer' className="footer">
         
           <div className='row'>
             <ul>
-              <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i className="fa fa-youtube"></i></a></li>
-              <li><a href="#"><i className="fa fa-twitter"></i></a></li>
+              <li><a href="#"><FontAwesomeIcon icon={faFacebook}/></a></li>
+              <li><a href="#"><FontAwesomeIcon icon={faInstagram}/></a></li>
+              <li><a href="#"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+              <li><a href="#"><FontAwesomeIcon icon={faTwitter}/></a></li>
             </ul>
           </div>
           

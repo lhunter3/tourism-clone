@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 import * as THREE from 'three';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Select from 'react-select';
 
 export function GlobeComponent() {
   const COUNTRIES_URL = 'ne_110m_admin_0_countries.geojson';
@@ -21,6 +21,8 @@ export function GlobeComponent() {
   const globeEl = useRef();
   const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
   const getVal = (feat) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
+
+  const BASE = '#/packages#';
 
 
   
@@ -45,6 +47,15 @@ export function GlobeComponent() {
   };
 
   useEffect(() => {
+
+
+
+
+
+
+
+
+
 
     globeEl.current.controls().enableZoom = false;
 
@@ -115,7 +126,7 @@ export function GlobeComponent() {
       btn.textContent = 'Explore packages';
       btn.onclick = function () {
         console.log("clicked btn");
-        window.location.href = '#/packages';
+        window.location.href = `${BASE}`+d.properties.name.toLowerCase().replace(/\s/g, '');
       };
 
       if (!cardItems.lastChild || cardItems.lastChild.id !== 'btn1') {
@@ -151,8 +162,30 @@ export function GlobeComponent() {
 
   return (
 
+
+
     <div className='globe-container'>
 
+
+      {/* <div className='row justify-content-center d-md-none pr-10 pl-10'>
+
+        
+        <Select
+       style={{
+        color: 'black',
+        display: 'inline-block',
+        fontSize: 12,
+        fontStyle: 'italic',
+        marginTop: '1em',
+      }}
+          options={countries?.features?.map(d => ({ value: d.properties.name }))}
+          value={selectedProvince}
+          onChange={(d) => handleClick()}
+          
+        />
+      </div> */}
+
+      <div className='d-none d-md-block'>
       <div id='globeContainerId' className="m-md-3 m-lg-5">
         <div id='cardbox' className="container-box" style={{ transform: `scale(${scale})` }}>
           <div id='cardItems' className='pb-4 pt-4'>
@@ -167,8 +200,12 @@ export function GlobeComponent() {
         </div>
       </div>
 
-    <div className='map-container'>
 
+      </div>
+      
+
+
+    <div className='map-container'>
 
       <Globe
         height={windowHeight -windowHeight/4}
