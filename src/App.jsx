@@ -5,7 +5,6 @@ import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 
 import { Home } from './Pages/LandingPage';
 import { Packages } from './Pages/Packages';
-import { Suspense } from 'react';
 
 
 export default function App() {

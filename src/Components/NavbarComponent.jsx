@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const LOGO  = 'ke-logo.jpg';
 
 export function NavbarComponent() {
