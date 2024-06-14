@@ -106,7 +106,7 @@ export function GlobeComponent() {
       btn.textContent = 'Explore packages';
       btn.onclick = function () {
         console.log("clicked btn");
-        window.location.href = '/tourism-clone/packages';
+        window.location.href = '#/packages';
       };
 
       if (!cardItems.lastChild || cardItems.lastChild.id !== 'btn1') {
