@@ -1,0 +1,121 @@
+[
+    {
+        "id": "1",
+        "title": "Canada’s unique neighborhoods",
+        "desc": "Discover the unique neighborhoods that make up Canada’s urban landscape.",
+        "content": "This is the detailed content of Article 1. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        "image": "wellness-1.jpg",
+        "featured": "true",
+        "category": "wellness"
+
+    },
+    {
+        "id": "2",
+        "title": "Experience Indigenous culture in the heart of the city",
+        "desc": "Explore the rich history and vibrant culture of Canada’s Indigenous peoples.",
+        "content": "This is the detailed content of Article 1. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        
+        "image": "wellness-2.jpg",
+        "featured": "true",
+        "category": "wellness"
+
+    },
+    {
+        "id": "3",
+        "title": "Cultural hot spots",
+        "desc": "Best places to experience Canada’s diverse cultural scene.",
+        "content": "This is the detailed content of Article 1. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+
+        "image": "wellness-3.jpg",
+        "featured": "true",
+        "category": "wellness"
+
+    },
+    {
+        "id": "4",
+        "title": "Culture 1",
+        "desc": "Discover the unique neighborhoods that make up Canada’s urban landscape.",
+        "content": "This is the detailed content of Article 1. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        
+        "image": "culture-1.jpg",
+        "featured": "true",
+        "category": "culture"
+        
+
+    },
+    {
+        "id": "5",
+        "title": "Culture 2",
+        "desc": "Explore the rich history and vibrant culture of Canada’s Indigenous peoples.",
+        "content": "This is the detailed content of Article 2. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        "image": "culture-2.jpg",
+        "featured": "true",
+        "category": "culture"
+
+    },
+    {
+        "id": "6",
+        "title": "Cultural hot spots 2",
+        "desc": "Best places to experience Canada’s diverse cultural scene.",
+        "content": "This is the detailed content of Article 1. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want. \nIt includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+
+        "image": "culture-3.jpg",
+        "featured": "true",
+        "category": "culture"
+
+    },
+    {
+        "id": "7",
+        "title": "Nature 1",
+        "desc": "Discover the unique neighborhoods that make up Canada’s urban landscape.",
+        "content": "This is the detailed content of Article 1. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        "image": "nature-1.jpg",
+        "featured": "true",
+        "category": "nature"
+
+    },
+    {
+        "id": "8",
+        "title": "Nature 2",
+        "desc": "Explore the rich history and vibrant culture of Canada’s Indigenous peoples.",
+        "content": "This is the detailed content of Article 2. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        "image": "alberta.jpg",
+        "featured": "true",
+        "category": "nature"
+
+    },
+    {
+        "id": "9",
+        "title": "Nature 3",
+        "desc": "Best places to experience Canada’s diverse cultural scene.",
+        "content": "This is the detailed content of Article 3. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        "image": "nature-3.jpg",
+        "featured": "true",
+        "category": "nature"
+
+    },
+
+
+
+
+    {
+        "id": "10",
+        "title": "Another Article",
+        "desc": "Best places to experience Canada’s diverse cultural scene.",
+        "content": "This is the detailed content of Article 3. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        "image": "britishcolumbia.jpg",
+        "featured": "false",
+        "category": "wellness"
+
+    },
+    {
+        "id": "11",
+        "title": "Another Article 2",
+        "desc": "Best places to experience Canada’s diverse cultural scene.",
+        "content": "This is the detailed content of Article 3. It includes a lot of information about the topic of the article. You can add as much text as you want.",
+        "image": "britishcolumbia.jpg",
+        "featured": "false",
+        "category": "wellness"
+
+    }
+]
