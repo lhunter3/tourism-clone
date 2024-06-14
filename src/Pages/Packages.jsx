@@ -13,6 +13,10 @@ import { HeroComponent } from '../Components/HeroComponent';
 
 export function Packages() {
 
+    //workaround for the issue where the page is not scrolled to the top when the page is loaded
+    window.onload = window.scrollTo(0, 0);
+
+
     const articles = [
         { title: 'Canada’s unique neighborhoods', image: 'saskatchewan.jpg', desc: 'Discover the unique neighborhoods that make up Canada’s urban landscape.' },
         { title: 'Experience Indigenous culture in the heart of the city', image: 'alberta.jpg', desc: 'Explore the rich history and vibrant culture of Canada’s Indigenous peoples.'},
