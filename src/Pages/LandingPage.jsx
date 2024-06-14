@@ -24,7 +24,7 @@ export function Home() {
     desc: 'Places to go, things to see and what to do—all neatly laid out. Begin your adventure with a travel package tailored to fit your needs. So the only surprises on your trip will be the good kind.',
     image: 'newbrunswick',
     button: 'Explore packages',
-    href: "#/packages"
+    href: "/tourism-clone/packages"
   }
 
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 992);

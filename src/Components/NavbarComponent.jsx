@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
+const LOGO  = 'public/ke-logo.jpg';
 
 export function NavbarComponent() {
   const [showNav, setShowNav] = useState(true);
@@ -25,7 +26,7 @@ export function NavbarComponent() {
     return (
       <nav style={{ top: showNav ? '0' : '-100px', transition: 'top 0.1s' }}>
           <Navbar expand='lg' className="navbar w-100 pl-4 pr-4">
-              <Navbar.Brand  href="/"><img width='89' height='50' src="/ke-logo.jpg"></img></Navbar.Brand>
+              <Navbar.Brand  href="/"><img width='89' height='50' src={LOGO}></img></Navbar.Brand>
               <Navbar.Toggle className="custom-toggler" />
   
               <Navbar.Collapse >

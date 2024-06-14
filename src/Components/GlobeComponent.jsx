@@ -7,8 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export function GlobeComponent() {
-  const COUNTRIES_URL = '/ne_110m_admin_0_countries.geojson';
-  const CITIES_URL = '/canada_cities.json';
+  const COUNTRIES_URL = 'public/ne_110m_admin_0_countries.geojson';
+  const CITIES_URL = 'public/canada_cities.json';
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
   const [countries, setCountries] = useState(null);
@@ -106,7 +106,7 @@ export function GlobeComponent() {
       btn.textContent = 'Explore packages';
       btn.onclick = function () {
         console.log("clicked btn");
-        window.location.href = '/#/packages';
+        window.location.href = '/tourism-clone/packages';
       };
 
       if (!cardItems.lastChild || cardItems.lastChild.id !== 'btn1') {
@@ -201,7 +201,7 @@ function GlobeCardComponent() {
   return (
     <div className="card-container">
       <Card className="card">
-        <Card.Img id='cardImage' variant="top" src="alberta.jpg" />
+        <Card.Img id='cardImage' variant="top" src="public/alberta.jpg" />
         <Card.Body className="card-body">
           <div className="card-title-container">
             <Card.Title id='cardTitle' className="card-title">Alberta</Card.Title>
