@@ -53,9 +53,9 @@ export function Home() {
 
       <hr className='red-divider'></hr>
 
-      {isLargeScreen && <GlobeComponent />} 
+      { <GlobeComponent />} 
 
-      {isLargeScreen && <hr className='red-divider'></hr>}
+       <hr className='red-divider'></hr>
 
       <ArticleComponent articles={articles} title='Culture' desc='Celebrate our culture' icon={<FontAwesomeIcon icon={faArrowRight}/>}></ArticleComponent>
 
