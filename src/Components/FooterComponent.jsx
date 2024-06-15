@@ -13,31 +13,32 @@ function CarouselComponent() {
   
     return (
   
-      <Carousel activeIndex={index} onSelect={handleSelect} className='carousel'>
+      <Carousel activeIndex={index} onSelect={handleSelect} className='' controls={false} indicators={false}>
+        
         <Carousel.Item >
           <img className='carousel-img blur' src='alberta.jpg' />
-          <Carousel.Caption >
+          {/* <Carousel.Caption className='d-flex align-itmes-center' >
             <h3>First slide label</h3>
             <p className='d-none d-md-block'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
   
         <Carousel.Item >
           <img className='carousel-img blur' src='saskatchewan.jpg' />
-          <Carousel.Caption >
+          {/* <Carousel.Caption >
             <h3>Second slide label</h3>
             <p className='d-none d-md-block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
   
         <Carousel.Item>
           <img className='carousel-img blur' src='britishcolumbia.jpg' />
-          <Carousel.Caption>
+          {/* <Carousel.Caption>
             <h3>Third slide label</h3>
             <p className='d-none d-md-block'>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
   
       </Carousel>
