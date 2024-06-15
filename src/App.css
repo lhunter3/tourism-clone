@@ -7,6 +7,9 @@
   color: black;
 }
 
+#root a {
+  text-decoration: none;
+}
 
 .fs-t1{
   font-size: 2.5rem;
