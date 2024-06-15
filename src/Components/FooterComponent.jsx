@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css';
+import '../css/FooterComponent.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {fab, faTwitterSquare, faFacebook, faLinkedin, faGithub, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";

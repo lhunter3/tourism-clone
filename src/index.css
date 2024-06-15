@@ -3,7 +3,6 @@
     font-style: normal;
     line-height: 1.5;
   
-    /* background-color: rgb(35, 161, 73); */
   
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -20,7 +19,6 @@
   }
   
   h1 {
-    font-size: 3.2em;
     line-height: 1.1;
   }
   

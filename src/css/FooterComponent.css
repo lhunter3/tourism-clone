@@ -1,0 +1,82 @@
+.footer {
+    background: rgb(20, 20, 20);
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+  }
+  
+  .footer .row {
+    width: 100%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+  }
+  
+  .footer .row a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+  }
+  
+  .footer .row a:hover {
+    color: red;
+  }
+  
+  .footer .row ul {
+    width: 100%;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    flex-wrap: wrap;
+  }
+  
+  .footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+  }
+  
+  .footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+  }
+  
+  @media (max-width: 720px) {
+    .footer {
+      text-align: left;
+      padding: 5%;
+    }
+    .footer .row ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .footer .row ul li {
+      display: flex; /* Changed from 'display: flexbox;' to 'display: flex;' */
+      margin: 10px 0px;
+      text-align: left;
+    }
+    .footer .row a i {
+      margin: 0% 3%;
+    }
+  }
+  
+
+  .carousel {
+    background-color: rgb(20, 20, 20);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel .carousel-img{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+  
+  }
+  
+  
+  .carousel .blur {
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent 80%);
+    position: relative;
+    z-index: 0;
+  }

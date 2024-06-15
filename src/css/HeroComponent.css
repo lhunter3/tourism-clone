@@ -1,0 +1,41 @@
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.header-title {
+    font-size: 4em;
+    color: white;
+  }
+  
+  .header-description {
+    font-size: 2em;
+    color: white;
+  }
+
+  
+.header-description {
+    line-height: normal;
+    font-size: 1.4em; /* Adjust as needed */
+  }

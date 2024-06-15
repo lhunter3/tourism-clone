@@ -1,6 +1,6 @@
 import React from 'react';
+import '../css/BannerComponent.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../App.css';
 
 
 
@@ -16,3 +16,4 @@ export function BannerComponent({article,button}){
       </div>
     );
   }
+

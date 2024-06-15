@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Globe from 'react-globe.gl';
 import * as d3 from 'd3';
 import * as THREE from 'three';
-import '../App.css';
+import '../css/GlobeComponent.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Select from 'react-select';
 
@@ -141,6 +141,7 @@ export function GlobeComponent() {
       var cardTitle = document.getElementById('cardTitle');
       cardTitle.innerText = d.properties.name;
       cardTitle.style.fontSize = '3vw';
+      cardTitle.style.color= 'white';
 
 
 
@@ -242,19 +243,3 @@ export function GlobeComponent() {
 };
 
 
-
-function GlobeCardComponent() {
-  return (
-    <div className="card-container">
-      <Card className="card">
-        <Card.Img id='cardImage' variant="top" src="public/alberta.jpg" />
-        <Card.Body className="card-body">
-          <div className="card-title-container">
-            <Card.Title id='cardTitle' className="card-title">Alberta</Card.Title>
-          </div>
-          <Card.Text id='cardDesc' className="card-text">Alberta is a province in Western Canada. Its landscape encompasses mountains, prairies, desert badlands and vast coniferous forests.</Card.Text>
-        </Card.Body>
-      </Card>
-    </div>
-  );
-}
