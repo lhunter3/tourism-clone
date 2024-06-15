@@ -5,6 +5,7 @@ import * as THREE from 'three';
 import '../css/GlobeComponent.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Select from 'react-select';
+import { Label } from 'flowbite-react';
 
 export function GlobeComponent() {
   const COUNTRIES_URL = 'ne_110m_admin_0_countries.geojson';
@@ -154,12 +155,26 @@ export function GlobeComponent() {
   };
 
 
-  const [isClicked, setIsClicked] = useState(false);
 
-  const handleMouseClick = () => {
-    console.log('clicked');
-    setIsClicked(!isClicked);
+   
+  const handleSelect = (selectedOption) => {
+      setSelectedProvince(selectedOption.label);
+      const selectedFeature = countries?.features?.find(feature => feature.properties.name === selectedOption.label);
+      if (selectedFeature) {
+        var coordinates = selectedFeature.geometry.coordinates[0][0];
+        var centroid = coordinates.reduce((prev, curr) => {
+          return [prev[0] + curr[0] / coordinates.length, prev[1] + curr[1] / coordinates.length];
+        }, [0, 0]);
+  
+        var altitude = Math.abs(centroid[0]) < 70.0 ? 0.3 : 0.6;
+        globeEl.current.pointOfView({ lat: centroid[1], lng: centroid[0], altitude: altitude }, 400);
+        
+        var info = document.getElementById('info');
+        info.style.visibility = 'visible';
+        info.textContent = `Visit ${selectedOption.label}`;
+      }
   };
+  
 
   return (
 
@@ -168,23 +183,26 @@ export function GlobeComponent() {
     <div className='globe-container'>
 
 
-      {/* <div className='row justify-content-center d-md-none pr-10 pl-10'>
+      <div className='row justify-content-center d-md-none pr-10 pl-10'>
 
         
-        <Select
-       style={{
-        color: 'black',
-        display: 'inline-block',
-        fontSize: 12,
-        fontStyle: 'italic',
-        marginTop: '1em',
-      }}
-          options={countries?.features?.map(d => ({ value: d.properties.name }))}
-          value={selectedProvince}
-          onChange={(d) => handleClick()}
-          
+        <h1 className='display-3 font-weight-bold text-sm-left'>Explore Canada</h1>
+
+        
+        <Select 
+          placeholder="Select a province"
+          options={countries?.features?.map(d => ({ value: d.properties.name,label: d.properties.name}))}
+          onChange={handleSelect}
+
         />
-      </div> */}
+
+        <div className='pt-2 pb'> 
+          Learn more about provinces and territories in Canada.
+        <div className='pt-2 pb-2 d-flex justify-content-center' >
+          <a id='info'href='#/packages' className='button-24' style={{visibility:'hidden', textDecoration:'none'}}></a>
+        </div>
+        </div>
+      </div>
 
       <div className='d-none d-md-block'>
       <div id='globeContainerId' className="m-md-3 m-lg-5">
